@@ -1,0 +1,11 @@
+table,th,td {
+    border: 1px solid black;
+    padding: 10px; 
+}
+ div {
+     float: left;
+ }
+
+ #right {
+     float: right;
+ }

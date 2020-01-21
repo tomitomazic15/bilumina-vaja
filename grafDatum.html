@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+      </div>
+      <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+      
+        let massPopChart = new Chart(myChart, {
+          type: 'bar',
+          data:{
+            labels:['2020-01-13', '2020-01-12', '2020-01-11', '2020-01-10', '2020-01-09', '2020-01-08', '2020-01-07', '2020-01-06', '2020-01-05', '2020-01-04', '2020-01-03', '2020-01-02'],
+            datasets:[{
+              label:'Vrednost prodaje',
+              data:[
+                6978.47,
+                3893.37,
+                10830.56,
+                8261.99,
+                6269.81,
+                6596.4,
+                5782.56,
+                7601.57,
+                3823.68,
+                10429.1,
+                9039.74,
+                153.08
+              ], 
+              backgroundColor:'lightgreen'
+            }]
+          },
+          options:{}
+        });
+      </script>
+</body>
+</html>

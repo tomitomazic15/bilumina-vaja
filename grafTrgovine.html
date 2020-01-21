@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+      <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+      
+        let massPopChart = new Chart(myChart, {
+          type: 'bar',
+          data:{
+            labels:['Trgovina 1', 'Trgovina 2', 'Trgovina 3', 'Trgovina 4', 'TESTNO SKLADISCE'],
+            datasets:[{
+              label:'Vrednost prodaje',
+              data:[
+                 7307.28,
+                 37324.5,
+                 32426.05,
+                 2571.9,
+                 30.6
+              ], 
+              backgroundColor:'lightblue'
+            }]
+          },
+          options:{}
+        });
+      </script>
+</body>
+</html>
