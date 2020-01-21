@@ -94,5 +94,8 @@ echo $temp;
         <td>2020-01-02: 153.08</td>
     </tr>
 </table>
+
+<a href="./grafDatum.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true" target="_blank">Graf Datum</a>
+<a href="./grafTrgovine.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Graf Trgovine</a>
 </body>
 </html>
